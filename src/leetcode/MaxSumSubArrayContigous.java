@@ -1,15 +1,13 @@
 package leetcode;
 
-import java.util.Scanner;
-
-public class MaxSumSubArray {
+public class MaxSumSubArrayContigous {
 
     public static void main(String[] args) {
 //        Scanner sc=new Scanner(System.in);
 //        int n=sc.nextInt();
 //        int arr[]=new int[n];
 
-        int[] arr={10,2,-5,-9};
+        int[] arr={10,-2,5,-9};
 
         System.out.println("sum-->"+findMaxSumOfSubArray(arr));
     }
@@ -22,6 +20,7 @@ public class MaxSumSubArray {
         int currentStart=0;
 
         for(int i=1;i<arr.length;i++){
+            //10,-2,5,-9
             if(arr[i]<currMax+arr[i]){
                 currMax=currMax+arr[i];
             }else {
