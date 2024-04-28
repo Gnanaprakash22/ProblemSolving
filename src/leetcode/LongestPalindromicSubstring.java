@@ -12,7 +12,6 @@ public class LongestPalindromicSubstring {
 
         String LPS="";
 
-        //babad
         for(int i=1;i<s.length();i++){
             int high=i;
             int low=i;
