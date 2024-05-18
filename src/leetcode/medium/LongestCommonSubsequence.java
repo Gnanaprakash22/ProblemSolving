@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 public class LongestCommonSubsequence {
     public static void main(String[] args) {
